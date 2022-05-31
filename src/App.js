@@ -7,7 +7,7 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navabr/Navbar";
 import Portfolio from "./Components/Portfolio/Portfolio";
-import Skills from "./Components/Skills/Skills";
+
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           
           <Home/>
           <About/>
-          <Skills/>
+        
           <Education/>
          
             
