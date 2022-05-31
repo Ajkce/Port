@@ -2,6 +2,7 @@
   "name": "starter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Ajkce.github.io/Portfolio",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -32,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+   "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
