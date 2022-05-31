@@ -1,0 +1,170 @@
+.about-section {
+  margin-bottom: 100px;
+  .about-padding {
+    padding: 0 25px;
+  }
+  .about-img,
+  .about-content {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .about-img {
+    padding: 0 25px;
+
+    .img-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 90%;
+        width: 90%;
+        height: 90%;
+        z-index: 8;
+        padding: 25px;
+        padding-bottom: 45px;
+      }
+      .about-shape {
+        width: 85%;
+        height: 90%;
+        border-left: 15px solid var(--blue);
+        border-bottom: 15px solid var(--blue);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 7;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 100%;
+
+          background-color: var(--blue);
+          right: 0;
+          bottom: -13px;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 101%;
+          height: 15px;
+
+          background-color: var(--blue);
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+  .about-content {
+    padding: 0 25px;
+    p {
+      text-align: justify;
+      margin-bottom: 40px;
+    }
+  }
+  .downloadbtn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      
+  }
+  .download {
+    opacity: 0;
+    color: var(--white);
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+  }
+
+  .downloadbtn:hover .download {
+      opacity: 1;
+    transform: translateY(0);
+  }
+   .download:visited{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-btn {
+  font-family: Hack, monospace;
+  background: #bbff00;
+  color: #1d1d1d;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 1.5rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  width: auto;
+  position: relative;
+  min-width: 250px;
+
+  &::after {
+    content: "<DownloadIcon/>";
+    font-weight: 400;
+    position: absolute;
+    left: 80%;
+    top: 54%;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background: #2b2bff;
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px #0000ff61;
+    padding: 1.5rem 3rem 1.5rem 1.5rem;
+    color: #ffffff;
+
+    &::after {
+      opacity: 1;
+      transition: all 0.5s;
+      color: #ffffff;
+    }
+  }
+}
+
+@media (max-width:962px){
+  .about-section{
+
+    .about-img{
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0 10vw;
+    }
+    .about-content{
+      padding-top: 130px;
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      .section-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+}
+
+@media (max-width:962px){
+  .about-section{
+
+    .about-img{
+     
+      padding: 0 5vw;
+    }}
+
+}

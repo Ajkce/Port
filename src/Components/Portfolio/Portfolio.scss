@@ -1,0 +1,399 @@
+.portfolio-filter{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+    text-align:  center;
+   
+
+    button{
+        text-transform: uppercase;
+        margin-top: -20px;
+        outline: none;
+        padding: 10px 25px;
+        border: 1px solid var(--primary);
+        font-weight: 600;
+        border-radius: 5px;
+        background-color: var(--white);
+        margin-right: 20px;
+        color: var(--primary);
+        transition: color 1s ease;
+
+       
+
+    }
+    button:hover, .active{
+        background-color: var(--primary);
+        color: var(--white);
+
+    }
+    
+    
+
+
+}
+.portfolio-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    animation:  showItem 0.5s ease;
+
+@keyframes showItem
+{
+    0%
+    {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+    .portfolio-item-inner{
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        .portfolio-img{
+            width: 100%;
+            height: 90%;
+
+        }
+        
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          
+            
+        }
+        .info{
+            display: block;
+          
+            color: black;
+            z-index: 10;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .portfolio-info{
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba($color: #000000, $alpha: 0.8);
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+            opacity: 0;
+            align-items: center;
+            text-align: center;
+            transition: all 0.3s ease;
+            &:hover h4, &:hover h3{
+                transform: translateY(0px);;
+            }
+
+            &:hover .button{
+                transform: translateY(0px);
+
+            }
+
+            
+            
+            
+
+            &:hover{
+                opacity: 1;
+             
+               
+            }
+            h4{
+                font-size: 18px;
+             
+                font-weight: 700;
+                color: var(--white);
+                text-transform: capitalize;
+                transition: all 0.3s ease;
+                transform: translateY(-50px);
+               
+            }
+            h3{
+                color: var(--red);
+           
+                font-weight: 200;
+                font-size: 16px;
+                transition: all 0.3s ease;
+                transform: translateY(-50px);
+            }
+            .button{
+                position: absolute;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                left: 0;
+                bottom: 50px;
+                text-align: center;
+                transition: all 0.3s ease;
+                transform: translateY(50px);
+              
+              
+               
+            }
+        }
+
+    }
+
+    
+
+    
+}
+.lightbox
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+    padding: 30px;
+    display: none;
+}
+.lightbox.open {
+display: flex;
+
+   
+}
+.lightbox .lightbox-content img
+{
+    height: auto;
+    max-width: 100%;
+    max-height: 500px;
+    cursor: pointer;
+    display: block;
+    padding: 40px 0 10px;
+    object-fit: cover;
+}
+.lightbox .lightbox-content
+
+{
+    position: relative;
+    max-width: 800px;
+    background-color: var(--white);
+    padding: 20px;
+}
+.lightbox.open .lightbox-content
+{
+    animation:  lightboxImage .5s ease;
+}
+@keyframes lightboxImage
+{
+    0%
+    {
+        transform: scale(0.8);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+.lightbox .lightbox-content .lightbox-close
+{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 40px;
+    right: 0;
+    font-size: 32px;
+    color: var(--blue);
+    line-height: 40px;
+    text-align: right;
+}
+.lightbox .lightbox-content .lightbox-caption
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: var(--white);
+    font-weight: 400;
+    z-index: -1;
+}
+.lightbox .lightbox-controls .prev-item,
+.lightbox .lightbox-controls .next-item
+{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--white);
+    color: var(--dark);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 110;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.lightbox .lightbox-controls .next-item:hover,
+.lightbox .lightbox-controls .prev-item:hover
+{
+    transform: scale(1.1);
+}
+.lightbox .lightbox-controls .next-item:active,
+.lightbox .lightbox-controls .prev-item:active
+{
+    transform: scale(1);
+}
+.lightbox .lightbox-controls .prev-item
+{
+    left: 30px;
+}
+.lightbox .lightbox-controls .next-item
+{
+    right: 30px;
+}
+.lightbox .lightbox-controls .next-item .micon,
+.lightbox .lightbox-controls .prev-item .micon
+{
+    font-size: 25px;
+    stroke: black;
+    stroke-width: 1.5;
+    line-height: 50px;
+}
+
+.lightbox-info{
+    background-color: white;
+    color: black;
+    padding: 25px;
+    max-width: 900px;
+
+    h2{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--blue);
+        line-height: 2px;
+        
+    }
+
+    .line li{
+        display: inline-block;
+        background-color: var(--blue);
+        border-radius: 50px;
+        height: 3px;
+      
+        &:nth-of-type(1){
+          width: 64px;
+          margin-right:3px;
+        }
+        &:nth-of-type(2){
+          margin-right:4px;
+          width: 10px;
+        }
+        &:nth-of-type(3){
+          width: 7px;
+        }
+      }
+
+      .desc{
+          margin: 10px 0;
+          color: var(--gray);
+
+      }
+      .btn{
+        padding: 2px 15px;
+        margin-right: 8px;
+        border-radius: 20px;
+        background-color: rgba(22, 11, 119, 0.2);
+        border: 1px solid var(--blue);
+        color: var(--blue);
+        transition: .3s ease;
+        min-width: -webkit-fit-content;
+        min-width: -moz-fit-content;
+        min-width: fit-content;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      .links{
+          display: flex;
+          gap: 10px;
+          .github-btn{
+              border: none;
+              outline: none;
+              background-color: #222;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 7px;
+              margin:15px 10px 15px 0px;
+
+              
+          }
+          .github{
+            color: #fff;
+            background-color: #222;
+            border-color: #222;
+            border-radius: 50%;
+            
+          }
+          .website-btn{
+              border: none;
+              outline: none;
+              background-color: #222;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 7px;
+              margin:15px 10px 15px 0px;
+
+              
+          }
+          .website{
+            color: #fff;
+            background-color: #222;
+            border-color: #222;
+            border-radius: 50%;
+            
+          }
+      }
+
+
+}
+
+@media (max-width:1162px){
+    .portfolio-item{
+        flex: 0 0 50%;
+        max-width: 100%;
+    }
+
+}
+@media (max-width:762px){
+    .portfolio-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+

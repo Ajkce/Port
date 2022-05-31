@@ -1,0 +1,42 @@
+footer {
+  background-color: var(--main-color);
+}
+footer {
+  img {
+    width: 100vw;
+    height: 209px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    color: red;
+  }
+  .row {
+    align-items: center;
+    .copyright-text {
+      padding: 10px 0;
+      font-size: 16px;
+      color: var(--white);
+      font-weight: 300;
+      margin: 10px 0 0;
+      span {
+        color: var(--yellow);
+        font-weight: 500;
+      }
+    }
+    .Footer__bold {
+      font-size: 15px;
+      color: #ed6a5a;
+      margin: auto 5px;
+    }
+  }
+}
+
+@media (max-width: 862px) {
+  .footer {
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.skills-section {
+  .skill-content,
+  .skill-img {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+  .skill-content{
+      padding: 0 35px;
+  }
+
+  .skill-header {
+    position: relative;
+  }
+  .skill-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+  .skill-percentage {
+    position: absolute;
+    top: -3px;
+    right: 0;
+  }
+  .skill-percentage p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .skill-bar {
+    margin-top: 15px;
+  }
+  .bar-inner {
+    width: 100%;
+    height: 9px;
+    border-radius: 5px;
+    background-color: rgba(33, 243, 26, 0.11);
+    position: relative;
+  }
+  .progress-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 9px;
+    border-radius: 5px;
+    background-color: var(--yellow);
+    width: 0%;
+    transition: all 5s ease-out;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      background-color: var(--white);
+      border: 2px solid var(--yellow);
+      top: -7px;
+      right: 0;
+    }
+  }
+
+  .skill-img{
+      padding: 0 35px;
+  }
+  .icons-row{
+      gap: 1rem;
+  }
+
+  
+ .tooltip{
+     font-size: 34px;
+
+ } 
+ .icon {
+          width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    
+    
+    
+}
+svg{
+        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    
+   
+}
+image{
+    width: 40px;
+    height: 40px;
+}
+
+}
+
+@media (max-width:962px){
+
+  .skills-section {
+    .skill-content,
+    .skill-img {
+      flex: 0 0 100%;
+      width: 100%;
+      padding-bottom: 100px;
+    }}
+
+}
