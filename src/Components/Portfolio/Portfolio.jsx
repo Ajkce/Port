@@ -7,15 +7,17 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkIcon from "@mui/icons-material/Link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import Githubuser from '../../img/Github.PNG';
 
 function Portfolio() {
   gsap.registerPlugin(ScrollTrigger);
+  console.log(Githubuser);
   const items = [
     {
       Id: 1,
-      title: "e-commerce",
-      type: "all",
-      img: "https://miro.medium.com/max/1014/1*Fgm5OdUWiLrSK8-aakUb3A.jpeg",
+      title: "Search Github-Users",
+      type: "react",
+      img: Githubuser,
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa ducimus officiis quia reprehenderit! Iure minus perferendis sed perspiciatis magni!",
       tools: [
         {
@@ -24,15 +26,15 @@ function Portfolio() {
         },
         {
           id: 2,
-          name: "Sass",
+          name: "Styled Components",
         },
         {
           id: 3,
           name: "Auth 0",
         },
       ],
-      github: "www.gdg.com",
-      website: "www.dgd.com",
+      github: "https://github.com/Ajkce/Github-users",
+      website: "https://ajaya-projects-github-users.netlify.app/",
     },
     {
       Id: 2,
