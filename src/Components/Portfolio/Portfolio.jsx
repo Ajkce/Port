@@ -7,7 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkIcon from "@mui/icons-material/Link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import Githubuser from '../../img/Github.PNG';
+import Githubuser from "../../img/Github.PNG";
 
 function Portfolio() {
   gsap.registerPlugin(ScrollTrigger);
@@ -41,18 +41,69 @@ function Portfolio() {
       title: "e-commerce",
       type: "javascript",
       img: "https://www.sam-solutions.com/blog/wp-content/uploads/2020/05/Mobile-ecommerce-SMM.png",
+      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa ducimus officiis quia reprehenderit! Iure minus perferendis sed perspiciatis magni!",
+      tools: [
+        {
+          id: 1,
+          name: "React",
+        },
+        {
+          id: 2,
+          name: "Styled Components",
+        },
+        {
+          id: 3,
+          name: "Auth 0",
+        },
+      ],
+      github: "https://github.com/Ajkce/Github-users",
+      website: "https://ajaya-projects-github-users.netlify.app/",
     },
     {
       Id: 3,
       title: "e-commerce",
       type: "react",
       img: "https://buildfire.com/wp-content/uploads/2019/12/Ecommerce-mobile-app-scaled-1200x900.png",
+      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa ducimus officiis quia reprehenderit! Iure minus perferendis sed perspiciatis magni!",
+      tools: [
+        {
+          id: 1,
+          name: "React",
+        },
+        {
+          id: 2,
+          name: "Styled Components",
+        },
+        {
+          id: 3,
+          name: "Auth 0",
+        },
+      ],
+      github: "https://github.com/Ajkce/Github-users",
+      website: "https://ajaya-projects-github-users.netlify.app/",
     },
     {
       Id: 4,
       title: "e-commerce",
       type: "react",
       img: "https://mindster.com/wp-content/themes/mindster/img/ecommerce-banner.png",
+      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa ducimus officiis quia reprehenderit! Iure minus perferendis sed perspiciatis magni!",
+      tools: [
+        {
+          id: 1,
+          name: "React",
+        },
+        {
+          id: 2,
+          name: "Styled Components",
+        },
+        {
+          id: 3,
+          name: "Auth 0",
+        },
+      ],
+      github: "https://github.com/Ajkce/Github-users",
+      website: "https://ajaya-projects-github-users.netlify.app/",
     },
   ];
 
@@ -88,7 +139,7 @@ function Portfolio() {
 
     to.from(
       port2.current,
-    
+
       {
         duration: 0.6,
         scaleX: 0.1,
@@ -101,8 +152,7 @@ function Portfolio() {
       []
     ).fromTo(
       ".portfolio-item",
-      {opacity: 0,
-        y: 200,},
+      { opacity: 0, y: 200 },
       {
         duration: 0.5,
         y: 0,
@@ -215,6 +265,7 @@ function Portfolio() {
         </div>
         <div className="row">
           {data.map((item) => {
+            console.log(item.Id);
             return (
               <>
                 <div className="portfolio-item" key={item.Id} ref={port3}>
@@ -263,31 +314,35 @@ function Portfolio() {
                     </div>
                     <div className="lightbox-info">
                       <div className="title">
-                        <h2>Ecommerce</h2>
+                        <h2>{item.title}</h2>
                         <ul className="line">
                           <li></li>
                           <li></li>
                           <li></li>
                         </ul>
                       </div>
-                      <div className="desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Repellat, molestiae. Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Corrupti, vel.
-                      </div>
+                      <div className="desc">{item.desc}</div>
                       <div>
-                        <button className="btn">React</button>
-                        <button className="btn">React</button>
-                        <button className="btn">React</button>
+                        {item.tools.map((tool) => {
+                          return (
+                            <button key={tool.id} className="btn">
+                              {tool.name}
+                            </button>
+                          );
+                        })}
                       </div>
 
                       <div className="links">
-                        <button className="github-btn">
-                          <GitHubIcon className="github"></GitHubIcon>
-                        </button>
-                        <button className="website-btn">
-                          <LinkIcon className="website"></LinkIcon>
-                        </button>
+                        <a href={item.github}>
+                          <button className="github-btn">
+                            <GitHubIcon className="github"></GitHubIcon>
+                          </button>
+                        </a>
+                        <a href={item.website}>
+                          <button className="website-btn">
+                            <LinkIcon className="website"></LinkIcon>
+                          </button>
+                        </a>
                       </div>
                     </div>
                   </div>

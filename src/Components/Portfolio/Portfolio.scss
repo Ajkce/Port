@@ -180,11 +180,14 @@ display: flex;
 {
     height: auto;
     max-width: 100%;
-    max-height: 500px;
+    max-height: 50vh;
     cursor: pointer;
     display: block;
     padding: 40px 0 10px;
     object-fit: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 .lightbox .lightbox-content
 
@@ -193,6 +196,7 @@ display: flex;
     max-width: 800px;
     background-color: var(--white);
     padding: 20px;
+    max-height: 100%;
 }
 .lightbox.open .lightbox-content
 {
@@ -214,12 +218,12 @@ display: flex;
     position: absolute;
     height: 40px;
     width: 40px;
-    top: 40px;
+    top: 0px;
     right: 0;
     font-size: 32px;
     color: var(--blue);
     line-height: 40px;
-    text-align: right;
+    text-align: center;
 }
 .lightbox .lightbox-content .lightbox-caption
 {
@@ -347,6 +351,7 @@ display: flex;
               align-items: center;
               padding: 7px;
               margin:15px 10px 15px 0px;
+              cursor: pointer;
 
               
           }
@@ -367,6 +372,7 @@ display: flex;
               align-items: center;
               padding: 7px;
               margin:15px 10px 15px 0px;
+              cursor: pointer;
 
               
           }

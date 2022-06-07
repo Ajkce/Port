@@ -8,7 +8,12 @@
   top: 0;
   z-index: 10;
   transition: all 0.4s ease-in-out;
-
+.wrapper{
+  height: 50px;
+}
+.row{
+  height: 50px;
+}
   .logo {
     font-family: "Kaushan Script", cursive;
     font-size: 45px;
@@ -232,6 +237,13 @@
 }
 
 @media (max-width: 762px) {
+  .nav_Right{
+    transform: translateX(-150000px);
+
+  }
+  .icons{
+    transform: translateX(-150000px);
+  }
  
   .body-fixed{
     overflow: hidden;
@@ -251,6 +263,12 @@
     .logo{
       color: black;
     }
+    .icons{
+      transform: translateX(0);
+    }
+    .nav_Right{
+      transform: translateX(0);
+    }
    
   }
   .sticky{
@@ -259,7 +277,7 @@
   }
 
   .sticky-responsive{
-    height: 450px;
+    height: 500px;
     transition: all 0.3s ease-in;
   }
   
@@ -274,6 +292,7 @@
     font-weight: 700;
     display: none;
     opacity: 0;
+   
   
   }
    .visible{
