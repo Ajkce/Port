@@ -173,7 +173,7 @@ function Skills() {
             <div className="about-skills">
               {data.map((item) => {
                 return (
-                  <>
+                  
                     <div className="skill-item" key={item.id}>
                       <div className="skill-header">
                         <div className="skill-title">{item.label}</div>
@@ -192,7 +192,7 @@ function Skills() {
                         </div>
                       </div>
                     </div>
-                  </>
+                 
                 );
               })}
             </div>
@@ -204,14 +204,17 @@ function Skills() {
             <div className="row icons-row">
               {icons.map((item) => {
                 return (
-                  <>
+                  
                     <BootstrapTooltip
                       title={item.value}
                       className="tooltip"
-                      ref={skill6}
+                      
+                      key={item.id}
+                     
                     >
                       <div
-                        key={item.id}
+                      ref={skill6}
+                     
                         className="icon icon-lg icon-shape shadow rounded-circle mb-5 tech-icon"
                         id="html-5"
                       >
@@ -220,7 +223,7 @@ function Skills() {
                         </svg>
                       </div>
                     </BootstrapTooltip>
-                  </>
+                  
                 );
               })}
             </div>

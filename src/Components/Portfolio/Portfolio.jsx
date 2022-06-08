@@ -11,7 +11,7 @@ import Githubuser from "../../img/Github.PNG";
 
 function Portfolio() {
   gsap.registerPlugin(ScrollTrigger);
-  console.log(Githubuser);
+ 
   const items = [
     {
       Id: 1,
@@ -247,7 +247,7 @@ function Portfolio() {
           <div className="portfolio-filter">
             {buttons.map((btn) => {
               return (
-                <>
+              
                   <button
                     type="button"
                     key={btn.id}
@@ -258,16 +258,16 @@ function Portfolio() {
                   >
                     {btn.value}
                   </button>
-                </>
+               
               );
             })}
           </div>
         </div>
         <div className="row">
           {data.map((item) => {
-            console.log(item.Id);
+        
             return (
-              <>
+              
                 <div className="portfolio-item" key={item.Id} ref={port3}>
                   <div className="portfolio-item-inner">
                     <div className="portfolio-img">
@@ -291,13 +291,14 @@ function Portfolio() {
                     </div>
                   </div>
                 </div>
-              </>
+              
             );
           })}
           {modelItem.map((item) => {
+            console.log(item);
             return (
-              <>
-                <div ref={element} className={`lightbox ${openbox && "open"} `}>
+           
+                <div ref={element} key={item.id} className={`lightbox ${openbox && "open"} `}>
                   <div className="lightbox-content">
                     <div className="lightbox-close" onClick={togglelightbox}>
                       &times;
@@ -364,7 +365,7 @@ function Portfolio() {
                     </div>
                   </div>
                 </div>
-              </>
+             
             );
           })}
         </div>

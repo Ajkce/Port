@@ -186,9 +186,9 @@ function Home() {
               offset={-100}
               duration={1000}
             >
-              <a ref={info3} href="" className="btn btn-yellow slidebtn  ">
+              <span ref={info3} href="" className="btn btn-yellow slidebtn  ">
                 Contact Me
-              </a>
+              </span>
             </Link>
           </div>
           <div className="home-image" ref={lottie}>

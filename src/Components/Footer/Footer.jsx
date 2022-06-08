@@ -4,17 +4,17 @@ import png from "./png.png";
 
 function Footer() {
   return (
-    <footer class="footer noise">
+    <footer className="footer noise">
 
-      <div class="wrapper">
+      <div className="wrapper">
         <img src={png} alt="" />
-        <div class="row justify-content-between ">
-          <p class="copyright-text">
+        <div className="row justify-content-between ">
+          <p className="copyright-text">
             Created By <span>Ajaya</span> | &copy; 2021 All rights reserved
           </p>
-          <p class="Footer__message">
-            <strong class="Footer__bold">&lt;/&gt;</strong> with{" "}
-            <span class="Footer__bold">🧡</span>
+          <p className="Footer__message">
+            <strong className="Footer__bold">&lt;/&gt;</strong> with{" "}
+            <span className="Footer__bold">🧡</span>
           </p>
         </div>
       </div>

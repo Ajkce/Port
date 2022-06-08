@@ -159,16 +159,16 @@ function Education() {
             viewBox="0 0 349.326 165.403"
             data-inject-url="https://linksome.me/s/app/themes/linksome/dist/images/path-landing-3.svg"
             data-animation="draw-svg"
-            class="content-image__path content-image__path--3 injectable"
+            className="content-image__path content-image__path--3 injectable"
           >
             <path
               d="M1276,1734s38,49.127,166.072,70.449,179.053,90.753,179.053,90.753"
               transform="translate(-1273.895 -1731.896)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-width="3"
-              stroke-dasharray="10"
+              strokeLinecap="round"
+              strokeWidth="3"
+              strokeDasharray="10"
               opacity="0.2"
             ></path>
           </svg>
@@ -201,7 +201,7 @@ function Education() {
           <img
             src="https://linksome.me/s/app/themes/linksome/dist/images/path-landing-2.svg"
             data-animation="draw-svg"
-            class="content-image__path content-image__path--2"
+            className="content-image__path content-image__path--2"
             alt="Path"
           ></img>
         </div>
@@ -235,16 +235,16 @@ function Education() {
             viewBox="0 0 349.326 165.403"
             data-inject-url="https://linksome.me/s/app/themes/linksome/dist/images/path-landing-3.svg"
             data-animation="draw-svg"
-            class="content-image__path content-image__path--3 injectable"
+            className="content-image__path content-image__path--3 injectable"
           >
             <path
               d="M1276,1734s38,49.127,166.072,70.449,179.053,90.753,179.053,90.753"
               transform="translate(-1273.895 -1731.896)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-width="3"
-              stroke-dasharray="10"
+              strokeLinecap="round"
+              strokeWidth="3"
+              strokeDasharray="10"
               opacity="0.2"
             ></path>
           </svg>

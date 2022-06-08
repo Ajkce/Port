@@ -50,10 +50,10 @@ function Navbar() {
                   duration={1000}
                 >
                   <li className="nav-items ">
-                    <a href="">
+                   
                       {" "}
                       Home <span></span>
-                    </a>
+                 
                   </li>
                 </Link>
                
@@ -66,9 +66,9 @@ function Navbar() {
                   duration={1000}
                 >
                   <li className="nav-items">
-                    <a href="">
+                    
                       About <span></span>
-                    </a>
+                 
                   </li>
                 </Link>
                 <Link
@@ -80,9 +80,9 @@ function Navbar() {
                   duration={1000}
                 >
                   <li className="nav-items">
-                    <a href="">
+                  
                       Skills <span></span>
-                    </a>
+               
                   </li>
                 </Link>
                 <Link
@@ -94,9 +94,9 @@ function Navbar() {
                   duration={1000}
                 >
                   <li className="nav-items">
-                    <a href="">
+                   
                       Education <span></span>
-                    </a>
+               
                   </li>
                 </Link>
                 <Link
@@ -107,9 +107,9 @@ function Navbar() {
                   duration={1000}
                 >
                   <li>
-                    <a href="">
+                  
                       Portfolio <span></span>
-                    </a>
+                
                   </li>
                 </Link>
                 <Link
@@ -121,21 +121,21 @@ function Navbar() {
                   duration={1000}
                 >
                   <li>
-                    <a href="">
+                  
                       Contact <span></span>
-                    </a>
+               
                   </li>
                 </Link>
               </ul>
             </div>
           </div>
           <div className="nav-container nav-container-visible " onClick={openNav}>
-            <input class="checkbox" type="checkbox" name="" id="" />
+            <input className="checkbox" type="checkbox" name="" id="" />
 
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
+            <div className="hamburger-lines">
+              <span className="line line1"></span>
+              <span className="line line2"></span>
+              <span className="line line3"></span>
             </div>
           </div>
         </div>
