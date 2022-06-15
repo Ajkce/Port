@@ -24,30 +24,9 @@ function Home() {
 
   const [letterClass, setLetterClass] = useState("text-animate");
   const hello = ["H", "e", "l", "l", "o", ","];
-  const myname = ["M", "y", " ", "N", "a", "m", "e", , " ", "i", "s", " "];
+  const myname = ["M", "y", " ", "N", "a", "m", "e", " ", "i", "s", " "];
   const name = ["A", "J", "A", "Y", "A", " ", "K", " ", "C"];
-  const job = [
-    "F",
-    "r",
-    "o",
-    "n",
-    "t",
-    "e",
-    "n",
-    "d",
-    "W",
-    "e",
-    "b",
-    "D",
-    "e",
-    "v",
-    "e",
-    "l",
-    "o",
-    "p",
-    "e",
-    "r",
-  ];
+ 
   const boxref = useRef();
   const socail1 = useRef();
   const socail2 = useRef();

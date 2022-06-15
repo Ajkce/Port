@@ -1,5 +1,6 @@
 
 import "./App.scss";
+import React  from 'react';
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Education from "./Components/Education/Education";

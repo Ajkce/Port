@@ -178,7 +178,7 @@ function Portfolio() {
   const Openmodel = (e) => {
     e.preventDefault();
     const itemid = parseInt(e.target.value);
-    const data = items.filter((item) => item.Id == itemid);
+    const data = items.filter((item) => item.Id === itemid);
     console.log(data);
     setModelItem(data);
     togglelightbox();
@@ -221,6 +221,7 @@ function Portfolio() {
       if (item.type === type) {
         return item;
       }
+      return item;
     });
     setData(newItem);
     handleClick(e);
@@ -251,7 +252,7 @@ function Portfolio() {
                   <button
                     type="button"
                     key={btn.id}
-                    className={active == btn.id ? "active" : ""}
+                    className={active === btn.id ? "active" : ""}
                     id={btn.id}
                     value={btn.value}
                     onClick={setItems}

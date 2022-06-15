@@ -9,9 +9,7 @@ import { ScrollTrigger } from "gsap/all";
 function Contact() {
   gsap.registerPlugin(ScrollTrigger);
   const con1 = useRef()
-  const con2 = useRef()
-  const con3 = useRef()
-  const con4 = useRef()
+ 
 
   useEffect(() => {
     const to = gsap.timeline({

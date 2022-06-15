@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Skills.scss";
 import Html from "../../img/html.svg";
 import Css from "../../img/css.svg";
