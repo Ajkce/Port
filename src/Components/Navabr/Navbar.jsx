@@ -50,9 +50,12 @@ function Navbar() {
                   duration={1000}
                 >
                   <li className="nav-items ">
+                    <a href="">
+
                    
                       {" "}
                       Home <span></span>
+                    </a>
                  
                   </li>
                 </Link>
@@ -66,8 +69,10 @@ function Navbar() {
                   duration={1000}
                 >
                   <li className="nav-items">
+                  <a href="">
                     
                       About <span></span>
+                      </a>
                  
                   </li>
                 </Link>
@@ -80,8 +85,10 @@ function Navbar() {
                   duration={1000}
                 >
                   <li className="nav-items">
+                  <a href="">
                   
                       Skills <span></span>
+                      </a>
                
                   </li>
                 </Link>
@@ -94,8 +101,10 @@ function Navbar() {
                   duration={1000}
                 >
                   <li className="nav-items">
+                  <a href="">
                    
                       Education <span></span>
+                      </a>
                
                   </li>
                 </Link>
@@ -107,8 +116,10 @@ function Navbar() {
                   duration={1000}
                 >
                   <li>
+                  <a href="">
                   
                       Portfolio <span></span>
+                      </a>
                 
                   </li>
                 </Link>
@@ -121,8 +132,9 @@ function Navbar() {
                   duration={1000}
                 >
                   <li>
-                  
+                  <a href="">
                       Contact <span></span>
+                      </a>
                
                   </li>
                 </Link>

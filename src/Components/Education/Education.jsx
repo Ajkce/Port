@@ -114,12 +114,18 @@ function Education() {
   }, []);
 
   return (
-    <section className="education-section" id="education">
+
+<section className="education-section pt-100" id="education">
       <div className="wrapper">
-        <div className="row align-items-center">
-          <div className="section-title column align-items-center  ">
+        <div className="row align-items-center ">
+          <div
+            className="section-title column align-items-center  "
+         
+          >
             <h5 className="sub-title ">Education</h5>
-            <h5 className="main-title">My Educatioal Qualification</h5>
+            <h3 className="main-title">My Educatioal Qualification</h3>
+
+   
             <ul className="line" ref={edu1}>
               <li></li>
               <li></li>

@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer noise">
 
       <div className="wrapper">
-        <img src={png} alt="" />
+     
         <div className="row justify-content-between ">
           <p className="copyright-text">
             Created By <span>Ajaya</span> | &copy; 2021 All rights reserved

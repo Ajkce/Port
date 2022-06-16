@@ -8,6 +8,9 @@ import LinkIcon from "@mui/icons-material/Link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Githubuser from "../../img/Github.PNG";
+import Backroad from "../../img/Backroad.PNG";
+import Comfy from "../../img/Comfy.PNG";
+import Jobster from "../../img/Jobster.PNG";
 
 function Portfolio() {
   gsap.registerPlugin(ScrollTrigger);
@@ -18,7 +21,7 @@ function Portfolio() {
       title: "Search Github-Users",
       type: "react",
       img: Githubuser,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa ducimus officiis quia reprehenderit! Iure minus perferendis sed perspiciatis magni!",
+      desc: "A github users search application project where data is fetched using github api. It displays the searched users github account details in an interactive chart format",
       tools: [
         {
           id: 1,
@@ -38,72 +41,72 @@ function Portfolio() {
     },
     {
       Id: 2,
-      title: "e-commerce",
-      type: "javascript",
-      img: "https://www.sam-solutions.com/blog/wp-content/uploads/2020/05/Mobile-ecommerce-SMM.png",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa ducimus officiis quia reprehenderit! Iure minus perferendis sed perspiciatis magni!",
+      title: "jobster",
+      type: "react",
+      img: Jobster,
+      desc: "A react-redux project which helps users to keep track of the job applications progress. It involves all the crud application like create, read, update and delete operations.",
       tools: [
         {
           id: 1,
-          name: "React",
+          name: "React-redux",
         },
         {
           id: 2,
-          name: "Styled Components",
+          name: "Axios",
         },
         {
           id: 3,
-          name: "Auth 0",
+          name: "Styled Components",
         },
       ],
-      github: "https://github.com/Ajkce/Github-users",
-      website: "https://ajaya-projects-github-users.netlify.app/",
+      github: "https://github.com/Ajkce/Jobster",
+      website: "https://react-jobster.netlify.app",
     },
     {
       Id: 3,
-      title: "e-commerce",
-      type: "react",
-      img: "https://buildfire.com/wp-content/uploads/2019/12/Ecommerce-mobile-app-scaled-1200x900.png",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa ducimus officiis quia reprehenderit! Iure minus perferendis sed perspiciatis magni!",
+      title: "Comfy",
+      type: "javascript",
+      img: Comfy,
+      desc: "A sample ecommerce project created using vanilla js. It utilises javascript array funcation to search, filter, sort and select the products based on specific properties.",
       tools: [
         {
           id: 1,
-          name: "React",
+          name: "HTML",
         },
         {
           id: 2,
-          name: "Styled Components",
+          name: "CSS",
         },
         {
           id: 3,
-          name: "Auth 0",
+          name: "Javascript",
         },
       ],
-      github: "https://github.com/Ajkce/Github-users",
-      website: "https://ajaya-projects-github-users.netlify.app/",
+      github: "https://github.com/Ajkce/Comfy",
+      website: "https://comfy-ajaya.netlify.app",
     },
     {
       Id: 4,
-      title: "e-commerce",
-      type: "react",
-      img: "https://mindster.com/wp-content/themes/mindster/img/ecommerce-banner.png",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa ducimus officiis quia reprehenderit! Iure minus perferendis sed perspiciatis magni!",
+      title: "Tours-project",
+      type: "javascript",
+      img: Backroad,
+      desc: "A vanilla Js tours webpage created using HTML, CSS and Javascript",
       tools: [
         {
           id: 1,
-          name: "React",
+          name: "HTML",
         },
         {
           id: 2,
-          name: "Styled Components",
+          name: "CSS",
         },
         {
           id: 3,
-          name: "Auth 0",
+          name: "Javascript",
         },
       ],
-      github: "https://github.com/Ajkce/Github-users",
-      website: "https://ajaya-projects-github-users.netlify.app/",
+      github: "https://github.com/Ajkce/tours",
+      website: "https://vanilla-js-backroad-project.netlify.app",
     },
   ];
 
@@ -214,16 +217,23 @@ function Portfolio() {
   };
 
   const setItems = (e) => {
+    
     e.preventDefault();
     const type = e.currentTarget.value;
+    
 
     const newItem = items.filter((item) => {
       if (item.type === type) {
+        
         return item;
+      } else if(type === 'all'){
+        return items;
       }
-      return item;
+      return false;
+      
     });
     setData(newItem);
+    console.log(newItem);
     handleClick(e);
   };
 

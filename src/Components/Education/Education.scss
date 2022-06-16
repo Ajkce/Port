@@ -1,6 +1,11 @@
 .education-section {
   flex: 0 0 100%;
   max-width: 100%;
+  .main-title{
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 
  
   .container{
@@ -20,7 +25,7 @@
       flex: 0 0 50%;
       max-width: 100%;
   }
-  
+ 
 
   .educational-qualification {
     padding: 25px;
